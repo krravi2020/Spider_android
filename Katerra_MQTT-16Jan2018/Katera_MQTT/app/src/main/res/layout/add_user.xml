@@ -1,0 +1,46 @@
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="20dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Gateway ID"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        android:id="@+id/userID"
+        android:singleLine="true"
+        android:inputType="textCapSentences|textNoSuggestions"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter User ID"
+        android:textSize="20sp"
+        android:id="@+id/gatewayID"
+        android:maxLength="4"
+        android:singleLine="true"
+        android:inputType="textCapSentences|textNoSuggestions"
+        />
+
+   <!-- <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Device Name"
+        android:textSize="20sp"
+        android:id="@+id/email"
+        android:singleLine="true"
+        android:inputType="textCapSentences|textNoSuggestions"
+        />-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:id="@+id/addUser"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="16dp"
+        android:layout_gravity="center"
+        android:src="@drawable/chrome_spidey"
+        app:civ_border_color="@android:color/transparent"
+        app:civ_border_overlay="true"
+        app:civ_fill_color="#50c17422"
+        app:civ_border_width="1dp"/>
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="@dimen/nav_header_vertical_spacing"-->
+    <!--android:background="@drawable/venom" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Spider"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="spider.gwreg@gmail.com"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/nav_header_height"-->
+    <!--android:background="@drawable/side_nav_bar"-->
+    <!--android:gravity="bottom"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--android:theme="@style/ThemeOverlay.AppCompat.Dark">-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="@dimen/nav_header_vertical_spacing"-->
+        <!--android:background="@drawable/venom" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="@dimen/nav_header_vertical_spacing"-->
+        <!--android:text="Spider"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="spider.gwreg@gmail.com" />-->
+
+<!--</LinearLayout>-->
+
+<!--&lt;!&ndash;-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/nav_header_height"-->
+        <!--android:background="@drawable/side_nav_bar"-->
+        <!--android:gravity="bottom"-->
+        <!--android:orientation="vertical"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark">-->
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:paddingTop="16dp"-->
+            <!--android:src="@drawable/spider_background"-->
+            <!--app:civ_border_color="@android:color/transparent"-->
+            <!--app:civ_border_overlay="true"-->
+            <!--app:civ_fill_color="#50c17422"-->
+            <!--app:civ_border_width="1dp"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="@dimen/nav_header_vertical_spacing"-->
+            <!--android:text="Spider"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:padding="5dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="spider.gwreg@gmail.com"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textSize="18sp"-->
+            <!--android:padding="5dp"-->
+            <!--android:textStyle="bold"/>-->
+
+<!--</LinearLayout>-->
+
+<!--&ndash;&gt;-->

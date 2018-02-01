@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:background="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="4dp"
+    app:cardBackgroundColor="@color/colorGrey"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:padding="8dp">
+        <!--<ImageView-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:id="@+id/device_icon"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--/>-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/device_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/smarthome"
+            app:civ_circle_background_color="@color/colorWhite"
+            app:civ_border_width="2dp"
+            android:layout_marginEnd="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deviceName"
+            android:layout_toRightOf="@+id/device_icon"
+            android:layout_alignParentTop="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Home Security Sensor"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/device_type"
+            android:layout_below="@+id/deviceName"
+            android:text="Sensor"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/device_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:text="Dry"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/device_manufacturer"
+            android:layout_toRightOf="@+id/device_icon"
+            android:layout_below="@+id/device_type"
+            android:text="Hank"
+            android:textSize="15sp"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+

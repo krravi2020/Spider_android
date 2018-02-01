@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homePage"
+            android:icon="@drawable/home"
+            android:title="Home"
+            />
+
+        <item
+            android:id="@+id/manage_User"
+            android:icon="@drawable/setting"
+            android:title="Manage User"
+            />
+        <item
+            android:id="@+id/gateWay_Details"
+            android:icon="@drawable/gateway"
+            android:title="GW Details" />
+        <item
+            android:id="@+id/heartBeat"
+            android:icon="@drawable/heart"
+            android:title="HearBeat" />
+        <item
+            android:id="@+id/bluetooth"
+            android:icon="@drawable/bluetooth1"
+            android:title="Bluetooth" />
+
+        <item
+            android:id="@+id/camera"
+            android:icon="@drawable/camera"
+            android:title="Camera" />
+
+        <item
+            android:id="@+id/ble"
+            android:icon="@drawable/gateway"
+            android:title="BLE" />
+        <item
+            android:id="@+id/Zigbee"
+            android:icon="@drawable/gateway"
+            android:title="Zigbee" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/singOut"
+                android:icon="@drawable/signout"
+                android:title="Log Out" />
+
+        </menu>
+    </item>
+
+</menu>

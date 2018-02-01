@@ -1,0 +1,28 @@
+<!--<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    &lt;!&ndash; Background Color &ndash;&gt;
+    <solid android:color="#c17422" />
+
+    &lt;!&ndash; Border Color &ndash;&gt;
+    <stroke android:width="1dp" android:color="#c17422" />
+
+    &lt;!&ndash; Round Corners &ndash;&gt;
+    <corners android:radius="1dp" />
+    &lt;!&ndash;<gradient&ndash;&gt;
+    &lt;!&ndash;android:angle="135"&ndash;&gt;
+    &lt;!&ndash;android:centerColor="#0b0b0b"&ndash;&gt;
+    &lt;!&ndash;android:endColor="#0b0b0b"&ndash;&gt;
+    &lt;!&ndash;android:startColor="#0b0b0b"&ndash;&gt;
+    &lt;!&ndash;android:type="linear" />&ndash;&gt;
+</shape>-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="135"
+        android:centerColor="#c17422"
+        android:endColor="#c17422"
+        android:startColor="#c17422"
+        android:type="linear" />
+</shape>

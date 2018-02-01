@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+        <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+            <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+            <item name="DialogTitleText">please wait…</item>
+            <item name="DialogSpotColor">@android:color/holo_orange_dark</item>
+            <item name="DialogSpotCount">4</item>
+        </style>
+
+    <style name="Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">#0288D1</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TextLabel" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorControlActivated">#FFCC00</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="TextViewMyTheme">
+    <item name="android:background">#000</item>
+    <item name="android:textColor">#fff</item>
+    <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CardViewStyle" parent="android:Widget.TextView">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+    <style name="mytoast">
+        <item name="textBold">true</item>
+        <item name="textColor">#fff</item>
+        <item name="textSize">14sp</item>
+        <item name="colorBackground">#fff</item>
+        <item name="solidBackground">true</item>
+        <item name="strokeWidth">3dp</item>     API 21+
+        <item name="strokeColor">#fff</item>    API 21+
+        <item name="length">LONG</item>         ENUM: LONG | SHORT
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,143 @@
+<RelativeLayout android:id="@+id/buttonsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_alignParentBottom="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout1"
+        >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:id="@+id/up"
+                android:background="@drawable/background"
+                >
+                <ImageView android:layout_width="wrap_content"
+                    android:src="@drawable/arrowup" android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:duplicateParentState="true">
+                </ImageView>
+            </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout1">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:paddingLeft="5dp"
+
+            >
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:id="@+id/left"
+                android:clickable="true"
+                android:background="@drawable/background"
+                >
+                <ImageView android:layout_width="wrap_content"
+                    android:src="@drawable/leftarrows" android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:duplicateParentState="true"
+                    android:clickable="true">
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:background="@drawable/background"
+                android:clickable="true"
+                >
+                <ImageView android:layout_width="wrap_content"
+                    android:src="@drawable/arrowplay" android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:duplicateParentState="true"
+                    android:clickable="true">
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_height="40dp"
+                android:id="@+id/right"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:background="@drawable/background"
+                >
+                <ImageView android:layout_width="wrap_content"
+                    android:src="@drawable/rightarrow" android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:duplicateParentState="true"
+                    android:clickable="true">
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout3"
+        android:layout_below="@+id/relativeLayout2">
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            >
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/down"
+                android:clickable="true"
+                android:background="@drawable/background"
+                >
+                <ImageView android:layout_width="wrap_content"
+                    android:src="@drawable/arrowdown" android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:duplicateParentState="true"
+                    android:clickable="true">
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout4"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/relativeLayout3"
+        android:clickable="true">
+        <Button
+            android:id="@+id/snapshots"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Snapshots"
+            android:clickable="true"
+            android:drawableLeft="@drawable/snapshots"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+</RelativeLayout>

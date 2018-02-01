@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    >
+    <com.wang.avi.AVLoadingIndicatorView
+    android:id="@+id/avi"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    style="@style/AVLoadingIndicatorView"
+    android:visibility="visible"
+    app:indicatorName="BallTrianglePathIndicator"
+    app:indicatorColor="#0467e9"
+    app:maxHeight="250dp"
+    app:minHeight="250dp"
+    android:layout_centerInParent="true"
+    />
+
+</RelativeLayout>-->
+
+    <com.skyfishjy.library.RippleBackground
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content"
+        android:background="@drawable/splash_screen"
+        app:rb_color="#c17422"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discovering Gateways..."
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="#c17422"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/centerImage"
+            android:background="@drawable/spider"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please wait..."
+            android:textSize="15dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_below="@+id/centerImage"
+            android:textColor="#c17422"
+            android:textStyle="bold"/>
+    </com.skyfishjy.library.RippleBackground>

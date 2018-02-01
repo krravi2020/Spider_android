@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Spider Hub</string>
+    <string name="title_activity_home_page">HomePage</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_device_management">DeviceManagement</string>
+    <string name="userId">Enter Your UserID</string>
+    <string name="gatewayID">Enter GatewayID</string>
+    <string name="login">Login</string>
+    <string name="register">REGISTER</string>
+    <string name="username">Username</string>
+    <string name="registergatewayID">GatewayID</string>
+    <string name="registermobilenumber">Mobilenumber</string>
+    <string name="registeremailId">Email ID</string>
+    <string name="registerusername">Username</string>
+    <string name="country_prompt">Choose Device Type</string>
+    <string name="ping">PING</string>
+
+    <string-array name="country_arrays">
+        <item>Zwave</item>
+        <item>Zigbee</item>
+        <item>BLE</item>
+
+    </string-array>
+    <string-array name="camera_arrays">
+        <item>HsmartLink</item>
+        <item>Dahua</item>
+    </string-array>
+</resources>

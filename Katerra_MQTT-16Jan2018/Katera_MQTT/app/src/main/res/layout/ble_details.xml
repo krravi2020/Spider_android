@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash_screen"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/common_app_bar"></include>
+    <LinearLayout
+        android:id="@+id/devicenameLLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_width="4dp"
+            android:src="@drawable/ic_bluetooth"
+            app:civ_circle_background_color="@color/colorWhite"
+            app:civ_border_color="@color/colorPrimary"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BLE device name"
+                android:textSize="@dimen/header_textsize"
+                android:textColor="@color/colorWhite" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BLE device name"
+                android:textSize="@dimen/normal_textsize"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center"
+        android:layout_margin="10dp"
+        android:padding="50dp"
+        android:paddingBottom="5dp" >
+        //Game Button Design Layout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/colla1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"/>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/top_round"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--app:cardBackgroundColor="@color/colorGrey">-->
+                        <at.markushi.ui.CircleButton
+                            android:id="@+id/imageView1"
+                            android:layout_width="70dip"
+                            android:layout_height="70dip"
+                            android:src="@drawable/upblackarrow"
+                            app:cb_color="@color/colorPrimary"
+                            android:layout_gravity="center"
+                            app:cb_pressedRingWidth="12dip" />
+                        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                            <!--android:layout_width="50dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--app:civ_border_width="4dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/ic_bluetooth"-->
+                            <!--app:civ_border_color="@color/colorPrimary"/>-->
+                    <!--</android.support.v7.widget.CardView>-->
+                </RelativeLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/colla2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/left_round"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--app:cardBackgroundColor="@color/colorGrey">-->
+                        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                            <!--android:layout_width="50dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--app:civ_border_width="4dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/ic_bluetooth"-->
+                            <!--app:civ_border_color="@color/colorPrimary"/>-->
+                        <at.markushi.ui.CircleButton
+                            android:layout_width="70dip"
+                            android:layout_height="70dip"
+                            android:src="@drawable/leftblackarrow"
+                            app:cb_color="@color/colorPrimary"
+                            android:layout_gravity="center"
+                            app:cb_pressedRingWidth="12dip" />
+                    <!--</android.support.v7.widget.CardView>-->
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/full_rec_layout"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--app:cardBackgroundColor="@color/colorGrey">-->
+                        <at.markushi.ui.CircleButton
+                            android:layout_width="60dip"
+                            android:layout_height="60dip"
+                            android:id="@+id/switchonoff"
+                            android:src="@drawable/ic_switchoff"
+                            app:cb_color="@color/colorPrimary"
+                            android:layout_gravity="center"
+                            app:cb_pressedRingWidth="8dip" />
+                        <TextView
+                            android:id="@+id/textview_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OFF"
+                            android:visibility="gone"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"/>
+                    <!--</android.support.v7.widget.CardView>-->
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/right_round"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--app:cardBackgroundColor="@color/colorGrey">-->
+                        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                            <!--android:layout_width="50dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--app:civ_border_width="4dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/ic_bluetooth"-->
+                            <!--app:civ_border_color="@color/colorPrimary"/>-->
+                        <at.markushi.ui.CircleButton
+                            android:layout_width="70dip"
+                            android:layout_height="70dip"
+                            android:src="@drawable/rightblackarrow"
+                            app:cb_color="@color/colorPrimary"
+                            android:layout_gravity="center"
+                            app:cb_pressedRingWidth="12dip" />
+                    <!--</android.support.v7.widget.CardView>-->
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/colla"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"/>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bottom_round"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--app:cardBackgroundColor="@color/colorGrey">-->
+                        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                            <!--android:layout_width="50dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--app:civ_border_width="4dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/ic_bluetooth"-->
+                            <!--app:civ_border_color="@color/colorPrimary"/>-->
+                        <at.markushi.ui.CircleButton
+                            android:id="@+id/imageView2"
+                            android:layout_width="70dip"
+                            android:layout_height="70dip"
+                            android:src="@drawable/downblackarrow"
+                            app:cb_color="@color/colorPrimary"
+                            android:layout_gravity="center"
+                            app:cb_pressedRingWidth="12dip" />
+                    <!--</android.support.v7.widget.CardView>-->
+                </RelativeLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/product_page_scroll_view"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:scrollbars="none"-->
+    <!--android:orientation="vertical">-->
+    <!--<include layout="@layout/common_app_bar"></include>-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingBottom="5dp" >-->
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/product_page_title_layout"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="59dp"-->
+            <!--android:orientation="vertical"-->
+            <!--android:tag="sticky-on_click_go_back" >-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="58dp"-->
+                <!--android:orientation="horizontal" >-->
+
+                <!--<ImageButton-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@android:color/transparent"-->
+                    <!--android:paddingBottom="10dp"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:paddingRight="10dp"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:orientation="vertical" >-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/deviceName1"-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:maxLines="2"-->
+                        <!--android:text="BLE DEVICE"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:textStyle="bold" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/deviceType1"-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="BLE"-->
+                        <!--android:textColor="#565656"-->
+                        <!--android:textSize="13dp" />-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#FFDFDFDF" />-->
+        <!--</LinearLayout>-->
+
+
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/icon1"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="240dp"-->
+            <!--android:layout_below="@id/product_page_title_layout"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:layout_marginRight="4dp"-->
+            <!--android:layout_marginTop="8dp" >-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:baselineAligned="false">-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/arrowUp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:src="@drawable/arrowup1"-->
+                        <!--/>-->
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/arrowDown"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:src="@drawable/arrowdown1"                        />-->
+
+                <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+
+        <!--</RelativeLayout>-->
+
+       <!--&lt;!&ndash; <LinearLayout-->
+            <!--android:id="@+id/layout1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/icon1"-->
+            <!--android:layout_marginLeft="6dp"-->
+            <!--android:layout_marginRight="6dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:visibility="gone"-->
+            <!--&gt;-->
+            <!--<View-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="#EBEBEB" />-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="4.5"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Tempreture"-->
+                    <!--android:id="@+id/tempreture"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text=""-->
+                    <!--android:id="@+id/tempretureValue"/>-->
+
+            <!--</LinearLayout>-->
+            <!--<View-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="0.2"-->
+                <!--android:background="#EBEBEB"-->
+                <!--android:visibility="gone"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="4.5"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Relative Humidity"-->
+                    <!--android:id="@+id/humidity"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text=""-->
+                    <!--android:id="@+id/humidityValue"/>-->
+
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/layout1"-->
+            <!--android:layout_marginLeft="6dp"-->
+            <!--android:layout_marginRight="6dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/layout2">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="4.5"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Burglar"-->
+                    <!--android:id="@+id/burglar"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text=""-->
+                    <!--android:id="@+id/burglarValue"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="0.2"-->
+                <!--android:background="#EBEBEB"-->
+                <!--android:visibility="gone"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="4.5"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Luminance"-->
+                    <!--android:id="@+id/Luminance"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/LuminanceValue"-->
+                    <!--android:text=""/>-->
+
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+
+<!--</LinearLayout>-->

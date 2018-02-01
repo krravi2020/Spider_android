@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen"
+    >
+    <include layout="@layout/bluetooth_app_bar"/>
+
+
+    <TextView
+        android:id="@+id/musicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Spider Audio"
+        android:textColor="#363535"
+        android:textSize="20sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/musicArtistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/musicTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Singer Spider - Artist Spider"
+        android:textColor="#403d3d"
+        android:textSize="14sp"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/songPlayerTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/musicArtistName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        >
+
+
+        <co.mobiwise.library.InteractivePlayerView
+            android:id="@+id/interactivePlayerView"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_centerInParent="true"
+            app:imageCover="@drawable/chrome_spidey"
+            app:selectedAction1="@drawable/shuffle_selected"
+            app:selectedAction2="@drawable/like_selected"
+            app:selectedAction3="@drawable/replay_selected"
+            app:unselectedAction1="@drawable/shuffle_unselected"
+            app:unselectedAction2="@drawable/like_unselected"
+            app:unselectedAction3="@drawable/replay_unselected" />
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/interactivePlayerView"
+            android:background="@android:drawable/ic_media_next"
+            />
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/interactivePlayerView"
+            android:background="@android:drawable/ic_media_previous" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/latestAddedSongs"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="#30302e"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/latestAddedSongTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Dummy List"
+            android:textColor="#EEEEEE"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/latestAddedSongTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#80fafafa" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/music1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/model_female" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:lines="1"
+                            android:text="Same Old Love - Selena Gomez"
+                            android:textColor="#ddd"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="Selena Gomez . 4:24"
+                            android:textColor="#ddd"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/music1"
+                    android:layout_marginTop="10dp"
+                    android:background="#20ffffff" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/latestAddedSongs"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-30dp"
+        android:id="@+id/relativeLayout3"
+        android:visibility="gone"
+        android:background="@drawable/circle">
+        <ImageView
+            android:id="@+id/control"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_action_play" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/latestAddedSongs"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-30dp"
+        android:id="@+id/stratPlay"
+        android:visibility="gone"
+        android:background="@drawable/circle">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:background="@android:drawable/ic_media_next" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/latestAddedSongs"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="-30dp"
+        android:layout_toLeftOf="@+id/relativeLayout3"
+        android:background="@drawable/circle"
+        android:id="@+id/stopPlay"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/stop"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

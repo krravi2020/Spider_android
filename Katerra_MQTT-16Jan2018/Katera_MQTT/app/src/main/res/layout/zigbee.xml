@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen"
+    >
+    <include layout="@layout/bluetooth_app_bar"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardList1"
+        android:clickable="true"
+        android:padding="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:id="@+id/rLayout1"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/offAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/onAll"
+            android:layout_toRightOf="@+id/view"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rippleeffect_roundbutton"
+            android:text="OFF ALL" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorGrey"
+            />
+
+
+        <Button
+            android:id="@+id/onAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/view"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rippleeffect_roundbutton"
+            android:text="ON ALL" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

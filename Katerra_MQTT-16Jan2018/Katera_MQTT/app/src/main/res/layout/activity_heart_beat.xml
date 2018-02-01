@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/common_app_bar"/>
+    <Button
+        android:id="@+id/ping"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/ping"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rippleeffect_roundbutton"
+        />
+    <LinearLayout
+        android:id="@+id/mLlayoutBottomButtons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/splash_screen"
+        android:layout_below="@+id/toolbar_layout">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gatewaydetailsrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>
+
+<!--
+<RelativeLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:layout_gravity="bottom|center"
+    android:orientation="vertical"
+    android:weightSum="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_app_bar"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:id="@+id/layout1">
+
+        <Button
+            android:id="@+id/ping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="PING"
+            android:onClick="pingClickHandler"
+            android:background="@color/colorPrimary"
+            android:textSize="30sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="25sp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:id="@+id/layout2"
+        android:visibility="gone">
+
+        <com.skyfishjy.library.RippleBackground
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content"
+            app:rb_color="#c17422"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="4"
+            app:rb_duration="3000"
+            app:rb_scale="4">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="contacting spider ,please wait....."
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="#c17422"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/centerImage"
+                android:background="@drawable/spider"
+                />
+        </com.skyfishjy.library.RippleBackground>
+
+    </LinearLayout>
+</RelativeLayout>-->
